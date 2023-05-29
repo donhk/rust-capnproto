@@ -1,0 +1,5 @@
+/target
+.idea/
+!src/schemas/mod.rs
+src/schemas/*.rs
+Cargo.lock
