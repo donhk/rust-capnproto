@@ -3,5 +3,24 @@
 version = 3
 
 [[package]]
+name = "capnp"
+version = "0.17.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "13e2d432d1601d61d1e11140d04e9d239b5cf7316fa1106523c3d86eea19c29d"
+
+[[package]]
+name = "capnpc"
+version = "0.17.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "93a9ad66f56468a890565d818ec4ab1300c1f6c62adbbc3295392f61d8f7dbd7"
+dependencies = [
+ "capnp",
+]
+
+[[package]]
 name = "rust-capnproto"
 version = "0.1.0"
+dependencies = [
+ "capnp",
+ "capnpc",
+]
